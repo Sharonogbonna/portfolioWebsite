@@ -1,0 +1,125 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+nav {
+  text-align: right;
+  margin: 3rem 2rem 3rem 0;
+}
+nav a {
+  margin: 0.5rem;
+}
+.headshot {
+  min-width: 250px;
+  min-height: 250px;
+  height: 25vh;
+  max-width: 350px;
+  max-height: 350px;
+  object-fit: cover;
+  object-position: 100% 15%;
+  border-radius: 100%;
+}
+.about-me{
+  display: grid;
+  margin-bottom: 30px;
+  /* height: 15rem; */
+  /* width: 25rem; */
+  border: 2px solid springgreen;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  font-size: 10px;
+  margin: auto;
+}
+.project-card {
+  /* margin: auto; */
+  background-color: gray;
+  border-radius: 4rem;
+  padding: 20px;
+}
+.cover-photo {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  object-fit: cover;
+}
+.github-icon {
+  width: 25px;
+  height: 25px;
+}
+/* @media only screen and (min-width: 360px) and (max-width: 768px) {
+    nav {
+        text-align: right;
+        margin: 3rem 2rem 3rem 0;
+      }
+      nav a {
+        margin: 0.5rem;
+      }
+      .name {
+        text-align: left;
+        margin-left: 3rem;
+      }
+      .photo {
+        width: 30vw;
+        float: left;
+        margin-left: 3rem;
+      }
+      .headshot {
+        min-width: 250px;
+        min-height: 250px;
+        height: 25vh;
+        max-width: 350px;
+        max-height: 350px;
+        object-fit: cover;
+        object-position: 100% 15%;
+        border-radius: 100%;
+      }
+      .about-me {
+        display: inline-block;
+        margin-bottom: 30px;
+        height: 15rem;
+        width: 25rem;
+        border: 2px solid springgreen;
+      }
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        font-size: 10px;
+        margin: auto;
+      }
+      .project-card {
+        background-color: gray;
+        border-radius: 4rem;
+        padding: 20px;
+      }
+      .cover-photo {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        object-fit: cover;
+      }
+      .github-icon {
+        width: 25px;
+        height: 25px;
+      }
+} */
