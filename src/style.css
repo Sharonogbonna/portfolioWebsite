@@ -1,3 +1,16 @@
+:root {
+    --red-color: #ac3d39;
+    --red-color-10: #bf443f;
+    --red-color-20: #c65652;
+    --red-color-30: #cc6965;
+    --red-color-40: #d27c79;
+    --red-color-50: #d98e8c;
+    --red-color-60: #dfa19f;
+    --red-color-70: #e5b4b2;
+    --red-color-80: #ecc7c5;
+    /* example on how to call the specific color you want */
+    /* background: var(--red-color-10); */
+  }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -17,7 +30,7 @@ h6 {
 
 nav {
   text-align: right;
-  margin: 3rem 2rem 3rem 0;
+  margin: 3rem 2rem 2rem 0;
 }
 nav a {
   margin: 0.5rem;
@@ -34,25 +47,38 @@ nav a {
 }
 .about-me{
   display: grid;
-  margin-bottom: 30px;
-  /* height: 15rem; */
-  /* width: 25rem; */
-  border: 2px solid springgreen;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  width: 90vw;
+  margin: auto;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+ background-color: orange;
 }
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 250px);
+  width: 90vw;
   align-items: center;
-  justify-items: center;
   justify-content: center;
-  font-size: 10px;
   margin: auto;
+  background-color: red;
+  margin-bottom: 5rem;
+}
+#the-projects{
+display: flex;
+background-color: orange;
 }
 .project-card {
-  /* margin: auto; */
-  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  background-color: yellow;
+  width: 12rem;
+  height: 12rem;
   border-radius: 4rem;
   padding: 20px;
+  font-size: 10px;
 }
 .cover-photo {
   width: 100px;
@@ -64,22 +90,13 @@ nav a {
   width: 25px;
   height: 25px;
 }
-/* @media only screen and (min-width: 360px) and (max-width: 768px) {
+@media only screen and (min-width: 360px) and (max-width: 768px) {
     nav {
         text-align: right;
-        margin: 3rem 2rem 3rem 0;
+        margin: 3rem 2rem 1rem 0;
       }
       nav a {
         margin: 0.5rem;
-      }
-      .name {
-        text-align: left;
-        margin-left: 3rem;
-      }
-      .photo {
-        width: 30vw;
-        float: left;
-        margin-left: 3rem;
       }
       .headshot {
         min-width: 250px;
@@ -93,19 +110,18 @@ nav a {
       }
       .about-me {
         display: inline-block;
-        margin-bottom: 30px;
+        margin-bottom: 20rem;
         height: 15rem;
-        width: 25rem;
+        width: 90vw;
         border: 2px solid springgreen;
       }
       .projects {
         display: grid;
-        grid-template-columns: repeat(2, 250px);
+        width: 90vw;
         align-items: center;
-        justify-items: center;
         justify-content: center;
-        font-size: 10px;
         margin: auto;
+        margin-bottom: 5rem;
       }
       .project-card {
         background-color: gray;
@@ -119,7 +135,8 @@ nav a {
         object-fit: cover;
       }
       .github-icon {
-        width: 25px;
-        height: 25px;
+        margin-top: .25rem;
+        width: 15px;
+        height: 15px;
       }
-} */
+}
