@@ -1,8 +1,9 @@
-import logo from './logo.svg';
+//css
 import './style.css'
-import './App.css';
 // import './colorPalette.css'
+//data
 import projectArr from './projects'
+//components
 import Project from './components/Project';
 import Headshot from './components/Headshot';
 import AboutMe from './components/AboutMe';
