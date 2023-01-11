@@ -1,32 +1,21 @@
+import { Route, Routes } from "react-router-dom"
 //css
 import './style.css'
 // import './colorPalette.css'
-//data
-import projectArr from './projects'
 //components
-import Project from './components/Project';
-import Headshot from './components/Headshot';
-import AboutMe from './components/AboutMe';
 import Nav from './components/Nav';
+//pages
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
-const projects = projectArr.map((ele, index) =>{
-  return <Project
-   {...ele}
-   key = {index}
-   />
-})
 function App() {
   return (
     <div className="App w3-theme-l4">
       <Nav/>
-      <section className='about-me'>
-      <div><Headshot/></div>
-      <div><AboutMe/></div>
-      </section>
-      <section className='projects'>
-      <h3>My projects</h3>
-        <div id='the-projects'>{projects}</div>
-      </section><a id='projects'></a>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/projects" element={<Projects/>}/>
+      </Routes>
     </div>
   );
 }
